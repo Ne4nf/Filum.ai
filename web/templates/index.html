@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Filum.ai Pain Point Agent{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold text-primary mb-3">
+                <i class="fas fa-lightbulb me-3"></i>
+                Pain Point to Solution Agent
+            </h1>
+            <p class="lead text-muted mb-4">
+                Describe your customer pain points, and our AI Agent will analyze and recommend suitable solutions from the Filum.ai platform
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <span class="badge bg-primary fs-6">
+                    <i class="fas fa-users me-1"></i>
+                    Customer Experience
+                </span>
+                <span class="badge bg-success fs-6">
+                    <i class="fas fa-headset me-1"></i>
+                    Customer Service
+                </span>
+                <span class="badge bg-info fs-6">
+                    <i class="fas fa-chart-line me-1"></i>
+                    Business Intelligence
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Input Form -->
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-edit me-2"></i>
+                        Describe Customer Pain Points
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <form id="painPointForm">
+                        <!-- Pain Point Input -->
+                        <div class="mb-3">
+                            <label for="painPoint" class="form-label fw-bold">
+                                <i class="fas fa-exclamation-triangle text-warning me-1"></i>
+                                Main Pain Point <span class="text-danger">*</span>
+                            </label>
+                            <textarea 
+                                class="form-control" 
+                                id="painPoint" 
+                                name="pain_point"
+                                rows="4" 
+                                placeholder="Example: Customers frequently complain about long wait times when contacting support..."
+                                required
+                            ></textarea>
+                            <div class="form-text">
+                                Describe in detail the problem that customers are facing
+                            </div>
+                        </div>
+
+                        <!-- Context -->
+                        <div class="mb-3">
+                            <label for="context" class="form-label fw-bold">
+                                <i class="fas fa-info-circle text-info me-1"></i>
+                                Additional Context
+                            </label>
+                            <textarea 
+                                class="form-control" 
+                                id="context" 
+                                name="context"
+                                rows="2" 
+                                placeholder="Additional information about the situation, causes, impact..."
+                            ></textarea>
+                        </div>
+
+                        <!-- Business Context -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="industry" class="form-label fw-bold">
+                                        <i class="fas fa-industry me-1"></i>
+                                        Industry
+                                    </label>
+                                    <select class="form-select" id="industry" name="industry">
+                                        <option value="">Select industry</option>
+                                        <option value="ecommerce">E-commerce</option>
+                                        <option value="banking">Banking & Finance</option>
+                                        <option value="retail">Retail</option>
+                                        <option value="telecom">Telecommunications</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="education">Education</option>
+                                        <option value="travel">Travel</option>
+                                        <option value="insurance">Insurance</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="companySize" class="form-label fw-bold">
+                                        <i class="fas fa-building me-1"></i>
+                                        Scale company
+                                    </label>
+                                    <select class="form-select" id="companySize" name="company_size">
+                                        <option value="">Select scale</option>
+                                        <option value="startup">Startup (< 50 employees)</option>
+                                        <option value="small">Small (50-200 employees)</option>
+                                        <option value="medium">Medium (200-1000 employees)</option>
+                                        <option value="large">Large (> 1000 employees)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="urgency" class="form-label fw-bold">
+                                        <i class="fas fa-clock me-1"></i>
+                                        Urgency Level
+                                    </label>
+                                    <select class="form-select" id="urgency" name="urgency">
+                                        <option value="">Select level</option>
+                                        <option value="low">Low</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="high">High</option>
+                                        <option value="critical">Critical</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="budgetRange" class="form-label fw-bold">
+                                        <i class="fas fa-dollar-sign me-1"></i>
+                                        Expected Budget
+                                    </label>
+                                    <select class="form-select" id="budgetRange" name="budget_range">
+                                        <option value="">Select budget</option>
+                                        <option value="low">< $50,000 USD</option>
+                                        <option value="medium">$50,000-250,000 USD</option>
+                                        <option value="high">$250,000-500,000 USD</option>
+                                        <option value="enterprise">> $500,000 USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-search me-2"></i>
+                                Analyze and Find Solutions
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-success text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-lightbulb me-2"></i>
+                        Solution recommend
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div id="resultsContainer">
+                        <div class="text-center text-muted py-5">
+                            <i class="fas fa-search fa-3x mb-3 opacity-50"></i>
+                            <h5>No analysis results yet</h5>
+                            <p>Please describe your pain point and click "Analyze" to receive solution recommendations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Examples -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-examples me-2"></i>
+                        Common Pain Point Examples
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-primary btn-sm w-100 example-btn" 
+                                    data-example="Customers complain about long support wait times, averaging 15-20 minutes before an agent responds">
+                                <i class="fas fa-headset me-1"></i>
+                                Slow Support
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-success btn-sm w-100 example-btn"
+                                    data-example="Don't understand customer needs and behavior clearly, lack insights to improve products and services">
+                                <i class="fas fa-chart-bar me-1"></i>
+                                Lack Customer Insights
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <button class="btn btn-outline-info btn-sm w-100 example-btn"
+                                    data-example="Difficult to collect and analyze feedback from multiple channels in a unified way">
+                                <i class="fas fa-comments me-1"></i>
+                                Feedback Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Initialize FormHandler and ExampleHandler
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing handlers...');
+    
+    // Initialize main form handler
+    const formHandler = new FormHandler('#painPointForm', '#resultsContainer');
+    
+    // Initialize example handler
+    const exampleHandler = new ExampleHandler();
+    
+    console.log('Handlers initialized successfully');
+});
+</script>
+{% endblock %}

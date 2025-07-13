@@ -1,0 +1,923 @@
+{
+  "features": [
+    {
+      "feature_id": "voc_surveys_multi_channel",
+      "feature_name": "Multi-Channel Surveys",
+      "category": "VoC",
+      "subcategory": "Surveys",
+      "description": {
+        "short": "Deploy surveys across multiple channels: Web, Mobile, Zalo, SMS, Email, QR, POS",
+        "detailed": "Multi-channel survey system that allows designing and deploying automated surveys across different touchpoints. Deep integration with customer journey to trigger surveys at the right moment.",
+        "technical_specs": "RESTful API, Webhook support, Real-time data sync, Mobile SDK"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "feedback_collection",
+          "keywords": [
+            "survey",
+            "feedback",
+            "feedback",
+            "collection",
+            "response rate",
+            "feedback rate"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "E-commerce",
+            "Retail",
+            "Banking",
+            "Healthcare"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Automated Survey Triggering",
+          "description": "Automatically trigger surveys based on customer behavior",
+          "use_cases": [
+            "Post-purchase feedback",
+            "Service completion surveys",
+            "Periodic satisfaction checks"
+          ]
+        },
+        {
+          "capability_name": "Multi-Channel Distribution",
+          "description": "Send surveys through multiple channels to maximize response rate",
+          "use_cases": [
+            "Email campaigns",
+            "SMS notifications",
+            "In-app surveys",
+            "QR codes"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "Web",
+          "Mobile",
+          "Email",
+          "SMS",
+          "Zalo",
+          "QR",
+          "POS"
+        ],
+        "third_party_tools": [
+          "CRM systems",
+          "Email platforms",
+          "Mobile apps"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "medium",
+        "setup_time": "2-4 weeks",
+        "resources_needed": [
+          "Technical integration",
+          "Survey design",
+          "Channel setup"
+        ],
+        "prerequisites": [
+          "Customer database",
+          "Basic touchpoint tracking"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Increase response rate 20-35%",
+          "Reduce feedback collection time by 50%"
+        ],
+        "throughlitative": [
+          "Better understand customer journey",
+          "Improve customer experience"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "E-commerce",
+          "company_size": "medium",
+          "challenge": "Survey response rate only 5% through email",
+          "solution": "Deploy multi-channel surveys with optimal timing",
+          "results": "Tăng response rate lên 28%, collection is/are 6x feedback hơn trước"
+        }
+      ],
+      "pricing_tier": "standard",
+      "related_features": [
+        "voc_journeys",
+        "insights_experience"
+      ]
+    },
+    {
+      "feature_id": "ai_inbox_smart_routing",
+      "feature_name": "AI Inbox with Smart Routing",
+      "category": "AI Customer Service",
+      "subcategory": "AI Inbox",
+      "description": {
+        "short": "Intelligent contact center with AI agent and human collaboration",
+        "detailed": "AI-integrated inbox system that automatically categorizes, processes and routes tickets. AI agent handles frequently asked questions, escalates complex cases to human agents.",
+        "technical_specs": "Natural Language Processing, Machine Learning models, Real-time routing engine"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "support_overload",
+          "keywords": [
+            "overload",
+            "overload",
+            "support",
+            "agent",
+            "volume",
+            "khối lượng",
+            "repetitive",
+            "repetitive"
+          ],
+          "severity_levels": [
+            "high"
+          ],
+          "business_contexts": [
+            "E-commerce",
+            "SaaS",
+            "Banking",
+            "Telecom"
+          ]
+        },
+        {
+          "pain_category": "response_time",
+          "keywords": [
+            "response time",
+            "thời gian feedback",
+            "chậm",
+            "slow",
+            "delay"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "All industries"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Automated First Response",
+          "description": "AI trả lời tự động for câu hỏi thường gặp",
+          "use_cases": [
+            "FAQ handling",
+            "Order status",
+            "Account information",
+            "Basic troubleshooting"
+          ]
+        },
+        {
+          "capability_name": "Intelligent Routing",
+          "description": "Phân loại and route tickets đến agent matching",
+          "use_cases": [
+            "Skill-based routing",
+            "Workload balancing",
+            "Priority handling"
+          ]
+        },
+        {
+          "capability_name": "Human-AI Collaboration",
+          "description": "Human agents is/arem việc cùng AI to xử lý cases phức tạp",
+          "use_cases": [
+            "AI suggestions",
+            "Knowledge assistance",
+            "Real-time support"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "Email",
+          "Chat",
+          "Social Media",
+          "Phone"
+        ],
+        "third_party_tools": [
+          "CRM",
+          "Help desk systems",
+          "Communication platforms"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "high",
+        "setup_time": "4-8 weeks",
+        "resources_needed": [
+          "Technical integration",
+          "AI training",
+          "Agent training",
+          "Process design"
+        ],
+        "prerequisites": [
+          "Historical ticket data",
+          "Knowledge base",
+          "Agent workflows"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Reduce workload for human agents by 60-70%",
+          "Improve response time by 80%",
+          "Increase resolution rate by 25%"
+        ],
+        "throughlitative": [
+          "Improve satisfaction",
+          "Reduce agent burnout",
+          "Standardize service throughlity"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "E-commerce",
+          "company_size": "large",
+          "challenge": "Support team overload, response time 4 giờ",
+          "solution": "Triển deploy AI Inbox with smart routing",
+          "results": "Response time xuống 15 phút, agent productivity tăng 3x"
+        }
+      ],
+      "pricing_tier": "premium",
+      "related_features": [
+        "ai_tickets_management",
+        "customer_360_profile"
+      ]
+    },
+    {
+      "feature_id": "insights_experience_analysis",
+      "feature_name": "Customer Journey Experience Analysis",
+      "category": "Insights",
+      "subcategory": "Experience",
+      "description": {
+        "short": "Detailed analysis of customer experience across touchpoints and channels",
+        "detailed": "Customer experience analysis system with AI-powered topic analysis, sentiment analysis and journey mapping. Identify friction points and improvement opportunities.",
+        "technical_specs": "Advanced Analytics Engine, Topic Modeling, Sentiment Analysis, Journey Visualization"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "journey_visibility",
+          "keywords": [
+            "journey",
+            "touchpoint",
+            "friction",
+            "bottleneck",
+            "experience",
+            "trải nghiệm"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "All industries with multi-touchpoint journeys"
+          ]
+        },
+        {
+          "pain_category": "data_analysis",
+          "keywords": [
+            "analysis",
+            "analysis",
+            "insight",
+            "trend",
+            "pattern",
+            "theme"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "Data-driven organizations"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Journey Mapping & Visualization",
+          "description": "Tạo visual map of customer journey with data thực tế",
+          "use_cases": [
+            "Journey optimization",
+            "Touchpoint analysis",
+            "Experience design"
+          ]
+        },
+        {
+          "capability_name": "AI-Powered Topic Analysis",
+          "description": "Tự động analysis chủ đề from feedback text",
+          "use_cases": [
+            "Theme identification",
+            "Issue categorization",
+            "Trend detection"
+          ]
+        },
+        {
+          "capability_name": "Sentiment & Emotion Tracking",
+          "description": "Đo lường sentiment and emotion through the touchpoints",
+          "use_cases": [
+            "Experience monitoring",
+            "Issue prediction",
+            "Satisfaction tracking"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "All feedback channels",
+          "Operational systems",
+          "Analytics platforms"
+        ],
+        "third_party_tools": [
+          "BI tools",
+          "Data warehouses",
+          "Survey platforms"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "high",
+        "setup_time": "6-10 weeks",
+        "resources_needed": [
+          "Data integration",
+          "Journey mapping",
+          "Analytics setup",
+          "Training"
+        ],
+        "prerequisites": [
+          "Multi-channel data",
+          "Customer identifiers",
+          "Journey definition"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Reduce friction points by 30%",
+          "Increase customer satisfaction by 20%",
+          "Improve conversion rate by 25%"
+        ],
+        "throughlitative": [
+          "Deep understanding of customer needs",
+          "Data-driven decision making",
+          "Proactive issue resolution"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "Banking",
+          "company_size": "large",
+          "challenge": "Không biết touchpoint nào gây frustration nhất",
+          "solution": "Triển deploy journey experience analysis",
+          "results": "Xác định and fix 5 friction points chính, tăng NPS 15 điểm"
+        }
+      ],
+      "pricing_tier": "premium",
+      "related_features": [
+        "voc_surveys_multi_channel",
+        "customer_360_profile"
+      ]
+    },
+    {
+      "feature_id": "customer_360_unified_profile",
+      "feature_name": "Customer 360 Unified Profile",
+      "category": "Customer 360",
+      "subcategory": "Customers",
+      "description": {
+        "short": "Create single view of customer with complete interaction history",
+        "detailed": "System that integrates all touchpoints and data sources to create unified customer profile. Includes interaction history, preferences, behavior patterns and predictive insights.",
+        "technical_specs": "Data integration engine, Customer Data Platform, Real-time profile updates"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "customer_visibility",
+          "keywords": [
+            "single view",
+            "unified",
+            "profile",
+            "history",
+            "interaction",
+            "tương tác"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "Multi-channel businesses",
+            "Complex customer journeys"
+          ]
+        },
+        {
+          "pain_category": "data_silos",
+          "keywords": [
+            "silo",
+            "fragmented",
+            "scattered",
+            "isolated",
+            "phân tán"
+          ],
+          "severity_levels": [
+            "high"
+          ],
+          "business_contexts": [
+            "Large organizations",
+            "Multiple systems"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Unified Data Integration",
+          "description": "Tích hợp data from tất cả touchpoints and systems",
+          "use_cases": [
+            "Customer onboarding",
+            "Support interactions",
+            "Sales processes"
+          ]
+        },
+        {
+          "capability_name": "Real-time Profile Updates",
+          "description": "Cập nhật profile according to real-time khi có interaction mới",
+          "use_cases": [
+            "Live customer service",
+            "Personalized experiences",
+            "Dynamic segmentation"
+          ]
+        },
+        {
+          "capability_name": "Behavioral Analytics",
+          "description": "Phân tích behavior patterns and predict next actions",
+          "use_cases": [
+            "Churn prediction",
+            "Upsell opportunities",
+            "Personalization"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "All customer touchpoints"
+        ],
+        "third_party_tools": [
+          "CRM",
+          "E-commerce platforms",
+          "Marketing automation",
+          "Support systems"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "high",
+        "setup_time": "8-12 weeks",
+        "resources_needed": [
+          "Data mapping",
+          "System integration",
+          "Data governance",
+          "Training"
+        ],
+        "prerequisites": [
+          "Customer identifiers",
+          "Data access",
+          "Privacy compliance"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Increase agent efficiency by 40%",
+          "Reduce resolution time by 50%",
+          "Increase upsell success by 25%"
+        ],
+        "throughlitative": [
+          "Personalized experiences",
+          "Consistent service",
+          "Better customer understanding"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "Telecom",
+          "company_size": "enterprise",
+          "challenge": "Agents không thấy is/are full customer history",
+          "solution": "Triển deploy Customer 360 unified profile",
+          "results": "Giảm average handle time 35%, tăng first call resolution 60%"
+        }
+      ],
+      "pricing_tier": "enterprise",
+      "related_features": [
+        "ai_inbox_smart_routing",
+        "insights_experience_analysis"
+      ]
+    },
+    {
+      "feature_id": "voc_conversations_analysis",
+      "feature_name": "AI-Powered Conversation Analysis",
+      "category": "VoC",
+      "subcategory": "Conversations",
+      "description": {
+        "short": "Automatically analyzes chat, call and email conversations to extract insights",
+        "detailed": "AI system that analyzes conversations from multiple channels to automatically extract topics, sentiment, intent and key insights. Helps understand customer voice from unstructured data.",
+        "technical_specs": "NLP Engine, Speech-to-Text, Topic Modeling, Sentiment Analysis, Intent Recognition"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "manual_analysis",
+          "keywords": [
+            "manual",
+            "thủ công",
+            "time-consuming",
+            "mất thời gian",
+            "analyze",
+            "analysis"
+          ],
+          "severity_levels": [
+            "high"
+          ],
+          "business_contexts": [
+            "High conversation volume",
+            "Customer service intensive"
+          ]
+        },
+        {
+          "pain_category": "unstructured_data",
+          "keywords": [
+            "unstructured",
+            "text",
+            "conversation",
+            "chat",
+            "call",
+            "email"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "Contact centers",
+            "Chat-heavy businesses"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Multi-Channel Analysis",
+          "description": "Phân tích conversations from chat, call, email, social media",
+          "use_cases": [
+            "Omnichannel insights",
+            "Channel comparison",
+            "Unified reporting"
+          ]
+        },
+        {
+          "capability_name": "Real-time Topic Extraction",
+          "description": "Tự động identify topics and themes from conversations",
+          "use_cases": [
+            "Trend monitoring",
+            "Issue detection",
+            "Content categorization"
+          ]
+        },
+        {
+          "capability_name": "Sentiment & Intent Analysis",
+          "description": "Đo sentiment and predict customer intent",
+          "use_cases": [
+            "Customer satisfaction monitoring",
+            "Escalation prediction",
+            "Personalization"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "Chat platforms",
+          "Call centers",
+          "Email systems",
+          "Social media"
+        ],
+        "third_party_tools": [
+          "Contact center software",
+          "CRM systems",
+          "Communication platforms"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "medium",
+        "setup_time": "4-6 weeks",
+        "resources_needed": [
+          "Data integration",
+          "AI model training",
+          "Analytics setup"
+        ],
+        "prerequisites": [
+          "Conversation data access",
+          "Data formats standardization"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Reduce analysis time by 80%",
+          "Increase insight discovery by 3x",
+          "Process 10x data volume"
+        ],
+        "throughlitative": [
+          "Proactive issue detection",
+          "Better customer understanding",
+          "Data-driven improvements"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "E-commerce",
+          "company_size": "medium",
+          "challenge": "Phân tích thủ công hàng nghìn chat conversations",
+          "solution": "AI-powered conversation analysis",
+          "results": "Tự động process 95% conversations, discover 20+ improvement opportunities"
+        }
+      ],
+      "pricing_tier": "standard",
+      "related_features": [
+        "insights_experience_analysis",
+        "ai_inbox_smart_routing"
+      ]
+    },
+    {
+      "feature_id": "customer_360_engagement_campaigns",
+      "feature_name": "Intelligent Engagement Campaigns",
+      "category": "Customer 360",
+      "subcategory": "Engagement",
+      "description": {
+        "short": "Run automated campaigns with personalization based on customer insights",
+        "detailed": "Engagement system that allows creating and running personalized campaigns based on customer data, behavior and preferences. Automatically trigger campaigns according to customer lifecycle.",
+        "technical_specs": "Campaign automation engine, Personalization algorithms, Multi-channel delivery"
+      },
+      "pain_points_addressed": [
+        {
+          "pain_category": "engagement_effectiveness",
+          "keywords": [
+            "engagement",
+            "campaign",
+            "hiệu quả",
+            "effectiveness",
+            "personalization",
+            "relevant"
+          ],
+          "severity_levels": [
+            "medium",
+            "high"
+          ],
+          "business_contexts": [
+            "Marketing-driven businesses",
+            "Customer retention focused"
+          ]
+        },
+        {
+          "pain_category": "manual_campaigns",
+          "keywords": [
+            "manual",
+            "thủ công",
+            "automation",
+            "tự động",
+            "scale",
+            "quy mô"
+          ],
+          "severity_levels": [
+            "medium"
+          ],
+          "business_contexts": [
+            "Growing businesses",
+            "Resource-constrained teams"
+          ]
+        }
+      ],
+      "capabilities": [
+        {
+          "capability_name": "Behavioral Triggering",
+          "description": "Tự động trigger campaigns dựa on customer behavior",
+          "use_cases": [
+            "Churn prevention",
+            "Upsell campaigns",
+            "Re-engagement"
+          ]
+        },
+        {
+          "capability_name": "Dynamic Personalization",
+          "description": "Personalize content and timing for fromng customer",
+          "use_cases": [
+            "Product recommendations",
+            "Personalized offers",
+            "Custom messaging"
+          ]
+        },
+        {
+          "capability_name": "Multi-Channel Orchestration",
+          "description": "Coordinate campaigns across multiple channels",
+          "use_cases": [
+            "Omnichannel experiences",
+            "Channel optimization",
+            "Message consistency"
+          ]
+        }
+      ],
+      "integration_options": {
+        "channels": [
+          "Email",
+          "SMS",
+          "Push notifications",
+          "In-app",
+          "Social media"
+        ],
+        "third_party_tools": [
+          "Marketing platforms",
+          "CRM systems",
+          "E-commerce platforms"
+        ],
+        "apis_available": true
+      },
+      "implementation": {
+        "complexity": "medium",
+        "setup_time": "3-5 weeks",
+        "resources_needed": [
+          "Campaign design",
+          "Integration setup",
+          "Content creation"
+        ],
+        "prerequisites": [
+          "Customer data",
+          "Channel access",
+          "Content strategy"
+        ]
+      },
+      "benefits": {
+        "throughntitative": [
+          "Increase engagement rate by 45%",
+          "Improve conversion by 30%",
+          "Reduce churn rate by 25%"
+        ],
+        "throughlitative": [
+          "Better customer relationships",
+          "Increased loyalty",
+          "Relevant communications"
+        ]
+      },
+      "success_stories": [
+        {
+          "industry": "Retail",
+          "company_size": "medium",
+          "challenge": "Generic campaigns with low engagement rate",
+          "solution": "Intelligent personalized campaigns",
+          "results": "Tăng email open rate 60%, conversion rate tăng 35%"
+        }
+      ],
+      "pricing_tier": "standard",
+      "related_features": [
+        "customer_360_unified_profile",
+        "insights_experience_analysis"
+      ]
+    }
+  ],
+  "pain_point_taxonomy": {
+    "categories": [
+      {
+        "category_name": "feedback_collection",
+        "subcategories": [
+          "survey_design",
+          "response_rates",
+          "data_throughlity",
+          "channel_coverage"
+        ],
+        "common_keywords": [
+          "feedback",
+          "survey",
+          "survey",
+          "response",
+          "feedback",
+          "collection",
+          "collection"
+        ],
+        "indicators": [
+          "Low response rates",
+          "Limited feedback channels",
+          "Poor data throughlity"
+        ]
+      },
+      {
+        "category_name": "support_overload",
+        "subcategories": [
+          "agent_capacity",
+          "ticket_volume",
+          "repetitive_queries",
+          "escalation_management"
+        ],
+        "common_keywords": [
+          "overload",
+          "overload",
+          "volume",
+          "capacity",
+          "repetitive",
+          "repetitive",
+          "agent"
+        ],
+        "indicators": [
+          "High ticket volume",
+          "Long response times",
+          "Agent burnout"
+        ]
+      },
+      {
+        "category_name": "customer_visibility",
+        "subcategories": [
+          "unified_profile",
+          "interaction_history",
+          "data_consolidation",
+          "single_view"
+        ],
+        "common_keywords": [
+          "visibility",
+          "profile",
+          "history",
+          "unified",
+          "single view",
+          "consolidation"
+        ],
+        "indicators": [
+          "Fragmented customer data",
+          "No interaction history",
+          "Multiple systems"
+        ]
+      },
+      {
+        "category_name": "journey_visibility",
+        "subcategories": [
+          "touchpoint_analysis",
+          "friction_points",
+          "experience_mapping",
+          "optimization"
+        ],
+        "common_keywords": [
+          "journey",
+          "touchpoint",
+          "friction",
+          "experience",
+          "mapping",
+          "optimization"
+        ],
+        "indicators": [
+          "Unknown friction points",
+          "Poor customer experience",
+          "Journey gaps"
+        ]
+      },
+      {
+        "category_name": "data_analysis",
+        "subcategories": [
+          "manual_processing",
+          "insight_extraction",
+          "trend_identification",
+          "reporting"
+        ],
+        "common_keywords": [
+          "analysis",
+          "analysis",
+          "manual",
+          "insight",
+          "trend",
+          "reporting",
+          "data"
+        ],
+        "indicators": [
+          "Manual data processing",
+          "Limited insights",
+          "Time-consuming analysis"
+        ]
+      }
+    ]
+  },
+  "business_contexts": {
+    "industries": [
+      "E-commerce",
+      "Banking",
+      "Healthcare",
+      "Retail",
+      "Technology",
+      "Telecom",
+      "Insurance",
+      "Manufacturing"
+    ],
+    "company_sizes": [
+      "startup",
+      "small",
+      "medium",
+      "large",
+      "enterprise"
+    ],
+    "business_models": [
+      "B2B",
+      "B2C",
+      "B2B2C",
+      "Marketplace",
+      "SaaS",
+      "Subscription"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pain_point": {
+    "description": "Our support agents are overwhelmed by repetitive customer questions. Current average response time is 4 hours, making customers dissatisfied. The support team is stressed and showing signs of burnout.",
+    "context": {
+      "industry": "SaaS",
+      "company_size": "large", 
+      "current_tools": ["Zendesk", "Slack", "Knowledge base"],
+      "urgency_level": "high"
+    },
+    "affected_areas": ["customer_service"],
+    "current_impact": {
+      "description": "Customer satisfaction decreased, agent turnover increased, support costs rising",
+      "metrics": {
+        "response_time": "4 hours average",
+        "customer_satisfaction": "3.2/5.0",
+        "agent_utilization": "120%"
+      }
+    }
+  },
+  "preferences": {
+    "solution_types": ["automation", "ai"],
+    "implementation_timeline": "immediate - 1 month"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "pain_point": {
+    "description": "We have difficulty collecting customer feedback after they make purchases. Currently only about 5% of customers respond to email surveys. We need to increase response rate to better understand customer experience.",
+    "context": {
+      "industry": "E-commerce",
+      "company_size": "medium",
+      "current_tools": ["Email marketing platform", "Basic CRM"],
+      "urgency_level": "high"
+    },
+    "affected_areas": ["customer_service", "marketing"],
+    "current_impact": {
+      "description": "Lack of insights about customer experience, difficult to improve products and services",
+      "metrics": {
+        "customer_satisfaction": "Unknown",
+        "response_rate": "5%"
+      }
+    }
+  },
+  "preferences": {
+    "solution_types": ["automation", "analytics"],
+    "implementation_timeline": "1-2 months"
+  }
+}
