@@ -5,7 +5,8 @@ scikit-learn>=1.0.0
 
 # Natural Language Processing
 nltk>=3.6
-spacy>=3.4.0
+# spacy>=3.4.0
+spacy<3.7
 transformers>=4.20.0
 
 # Data handling
