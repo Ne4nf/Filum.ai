@@ -47,7 +47,7 @@ class PainPointAgent:
     # ) -> AgentOutput:
 
     def analyze_and_recommend(
-    self, pain_point_input: Union[Dict, PainPointInput], max_solutions: int = 3
+        self, pain_point_input: Union[Dict, PainPointInput], max_solutions: int = 3
     ) -> AgentOutput:
         """
         Analyze pain point and recommend solutions
