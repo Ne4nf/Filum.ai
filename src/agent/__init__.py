@@ -3,7 +3,7 @@ Pain Point Agent - Main orchestrator class
 Coordinates the entire workflow from input analysis to output generation
 """
 
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Union
 import json
 import os
 import re
