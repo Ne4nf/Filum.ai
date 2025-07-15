@@ -88,9 +88,9 @@ jobs:
     - name: Test API endpoint
       run: |
         curl -X POST http://127.0.0.1:8000/api/analyze \
-         -H "Content-Type: application/json" \
-         -d '{"pain_point":"Test pain point","industry":"technology","company_size":"startup","urgency":"medium"}' \
-         -f -v
+          -H "Content-Type: application/json" \
+          -d '{"pain_point":{"description":"Test pain point","context":{"industry":"technology","company_size":"startup","urgency_level":"medium","budget_range":null},"affected_areas":["customer_service"],"current_impact":{"description":"Test pain point"}}}' \
+          -f -v
 
   security-scan:
     runs-on: ubuntu-latest
