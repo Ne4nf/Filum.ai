@@ -24,15 +24,7 @@ This agent serves as an intelligent bridge between **business pain points** and 
 3. **Matching**: Advanced algorithm maps pain points to relevant Filum.ai features
 4. **Output**: Structured recommendations with implementation guidance
 
-### 🏢 **Filum.ai Platform Context**
 
-Filum.ai is a comprehensive Customer Experience and Customer Service Platform powered by Generative AI, featuring:
-
-- **🎙️ Voice of Customer (VoC)**: Journeys, Surveys, Reviews, Conversations
-- **🤖 AI Customer Service**: AI Inbox, Tickets Management  
-- **📊 Insights**: Experience Analytics, Operational Monitoring
-- **👥 Customer 360**: Customer Management, Engagement Campaigns
-- **⚡ AI & Automation**: Smart Workflows and Configurations
 
 <img width="1888" height="915" alt="Web Interface Demo" src="https://github.com/user-attachments/assets/2de8f8f3-d438-4bc4-9f6d-0cf3a8ef8c19" />
 
@@ -46,18 +38,8 @@ Filum.ai is a comprehensive Customer Experience and Customer Service Platform po
 - 🌐 **Multi-Interface Support**: Web app, CLI, and Python API for different use cases
 - 🚀 **Production Ready**: Comprehensive testing, CI/CD pipeline, and deployment options
 - 🔧 **Extensible Design**: Easy to add new Filum.ai features and matching algorithms
-- 🌍 **Enterprise Ready**: Full English support for international deployment
 
-### 🎯 **Real-World Examples**
 
-**Pain Point**: *"We're struggling to collect customer feedback consistently after a purchase."*
-→ **Recommended Solution**: Automated Post-Purchase Surveys (VoC - Surveys)
-
-**Pain Point**: *"Our support agents are overwhelmed by repetitive questions."*  
-→ **Recommended Solution**: AI Agent for FAQ & First Response (AI Customer Service - AI Inbox)
-
-**Pain Point**: *"We can't identify which touchpoints cause customer frustration."*
-→ **Recommended Solution**: Customer Journey Experience Analysis (Insights - Experience)
 
 ### 🎮 Quick Demo
 
@@ -107,47 +89,6 @@ pip install -r requirements.txt
 # 4. Verify installation
 pytest
 python examples/simple_demo.py
-```
-
-### Quick Usage
-
-#### 🌐 Web Interface
-```bash
-python run.py web
-# Open http://localhost:8000 in browser
-```
-
-#### 📱 CLI Interface  
-```bash
-# Interactive mode
-python src/cli.py interactive
-
-# Direct analysis with context
-python src/cli.py analyze "High customer churn rate" --industry e_commerce --urgency high
-```
-
-#### 🐍 Python API
-```python
-from src.agent import PainPointAgent
-from src.models import PainPointInput, Context
-
-# Initialize Filum.ai agent
-agent = PainPointAgent()
-
-# Define business pain point
-pain_point = PainPointInput(
-    description="High customer churn rate affecting revenue",
-    affected_areas=["customer_service", "retention"],
-    context=Context(
-        industry="e_commerce",
-        company_size="medium", 
-        urgency_level="high"
-    )
-)
-
-# Get Filum.ai solution recommendations
-result = agent.analyze_and_recommend(pain_point)
-print(f"Found {len(result.recommended_solutions)} Filum.ai solutions")
 ```
 
 ---
@@ -318,35 +259,6 @@ def calculate_confidence_score(pain_point: PainPointInput, filum_feature: dict) 
 
 ---
 
-## 📊 Filum.ai Knowledge Base
-
-The system includes **6 core Filum.ai features** across the platform's main categories:
-
-### �️ Voice of Customer (VoC)
-- **VoC Platform**: Multi-channel feedback collection across Web, Mobile, Zalo, SMS, Email, QR, POS
-- **Customer Journey Analytics**: End-to-end journey mapping with touchpoint analysis
-- **Multi-Channel Surveys**: Automated survey deployment and response collection
-
-### 🤖 AI Customer Service  
-- **AI Inbox**: Streamlined contact center with human-AI agent collaboration
-- **AI-Powered Customer Service**: Intelligent FAQ handling and first-response automation
-- **Smart Routing**: Automated ticket management and intelligent agent assignment
-
-### 📊 Insights & Analytics
-- **Experience Analytics**: Customer experience monitoring across touchpoints with topic analysis
-- **Operational Monitoring**: Performance tracking for surveys, campaigns, and contact center
-
-### 👥 Customer 360
-- **Customer Management**: Complete customer base management with segmentation capabilities
-- **Engagement Campaigns**: Targeted customer engagement and communication workflows
-
-Each Filum.ai feature includes:
-- ✅ **Detailed capabilities** mapped to common business pain points
-- ✅ **Implementation guidance** with timelines and complexity assessment  
-- ✅ **Industry fit analysis** for targeted recommendations
-- ✅ **Use case mappings** for specific customer experience challenges
-
----
 
 ## 🌐 Web Application
 
@@ -410,94 +322,6 @@ pytest -v --tb=short
 
 ---
 
-## 🚀 Deployment
-
-### Local Development
-
-```bash
-# Start development server
-python run.py
-
-# Enable debug mode
-DEBUG=true python run.py
-```
-
-### Production Deployment
-
-#### Option 1: Direct Python
-```bash
-pip install gunicorn
-gunicorn web.app:app --workers 4 --bind 0.0.0.0:8000
-```
-
-#### Option 2: Docker
-```bash
-# Build image
-docker build -t filum-pain-point-agent .
-
-# Run container  
-docker run -p 8000:8000 filum-pain-point-agent
-```
-
-#### Option 3: Docker Compose
-```yaml
-version: '3.8'
-services:
-  app:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DEBUG=false
-      - API_HOST=0.0.0.0
-      - API_PORT=8000
-    restart: unless-stopped
-```
-
-### Environment Variables
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DEBUG` | `false` | Enable debug mode |
-| `API_HOST` | `127.0.0.1` | Server host |
-| `API_PORT` | `8000` | Server port |
-| `MAX_SOLUTIONS` | `5` | Maximum solutions to return |
-| `CONFIDENCE_THRESHOLD` | `0.1` | Minimum confidence score |
-
----
-
-## 📚 API Reference
-
-### PainPointAgent
-
-```python
-class PainPointAgent:
-    def __init__(self, knowledge_base_path: str = None, matching_engine = None):
-        """Initialize the agent with optional custom components."""
-        
-    def analyze_and_recommend(self, pain_point: PainPointInput) -> PainPointResult:
-        """Analyze pain point and return recommendations."""
-        
-    def get_solution_by_id(self, solution_id: str) -> Optional[Solution]:
-        """Get solution details by ID."""
-```
-
-### Data Models
-
-```python
-# Input models
-class PainPointInput(BaseModel):
-    description: str
-    affected_areas: List[str]
-    context: Context
-    preferences: Optional[Preferences] = None
-
-# Output models  
-class PainPointResult(BaseModel):
-    analysis: PainPointAnalysis
-    recommended_solutions: List[Solution]
-    metadata: AnalysisMetadata
-```
 
 
 ## 🚀 Quick Start Summary
@@ -518,11 +342,6 @@ python run.py
 # 4. Visit http://localhost:8000
 ```
 
----
-
-**Happy analyzing! 🎯**
-
-*Transform customer pain points into actionable solutions with AI-powered intelligence.*
 
 ---
 
