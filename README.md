@@ -81,46 +81,6 @@ pytest
 python examples/simple_demo.py
 ```
 
-### Quick Usage
-
-#### 🌐 Web Interface
-```bash
-python run.py
-# Open http://localhost:8000 in browser
-```
-
-#### 📱 CLI Interface
-```bash
-# Interactive mode
-python src/cli.py interactive
-
-# Direct analysis
-python src/cli.py analyze "High customer churn rate" --industry e_commerce --urgency high
-```
-
-#### 🐍 Python API
-```python
-from src.agent import PainPointAgent
-from src.models import PainPointInput, Context
-
-# Initialize agent
-agent = PainPointAgent()
-
-# Create pain point
-pain_point = PainPointInput(
-    description="High customer churn rate affecting revenue",
-    affected_areas=["customer_service", "retention"],
-    context=Context(
-        industry="e_commerce",
-        company_size="medium", 
-        urgency_level="high"
-    )
-)
-
-# Get recommendations
-result = agent.analyze_and_recommend(pain_point)
-print(f"Found {len(result.recommended_solutions)} solutions")
-```
 
 ---
 
@@ -371,49 +331,6 @@ pytest -v --tb=short
 
 ---
 
-## 🚀 Deployment
-
-### Local Development
-
-```bash
-# Start development server
-python run.py
-
-# Enable debug mode
-DEBUG=true python run.py
-```
-
-### Production Deployment
-
-#### Option 1: Direct Python
-```bash
-pip install gunicorn
-gunicorn web.app:app --workers 4 --bind 0.0.0.0:8000
-```
-
-#### Option 2: Docker
-```bash
-# Build image
-docker build -t filum-pain-point-agent .
-
-# Run container  
-docker run -p 8000:8000 filum-pain-point-agent
-```
-
-#### Option 3: Docker Compose
-```yaml
-version: '3.8'
-services:
-  app:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DEBUG=false
-      - API_HOST=0.0.0.0
-      - API_PORT=8000
-    restart: unless-stopped
-```
 
 ### Environment Variables
 
