@@ -13,6 +13,7 @@
 
 The **Filum.ai Pain Point to Solution Agent** is a comprehensive AI-powered system designed to bridge the gap between customer pain points and actionable solutions. Built specifically for **Customer Experience (CX)** and **Customer Service** domains, this agent intelligently analyzes business challenges and maps them to Filum.ai's suite of solutions.
 
+---
 
 ## 📸 Screenshots
 <img width="1891" height="912" alt="Image" src="https://github.com/user-attachments/assets/431b8f3c-f890-4332-a746-24d14bc813eb" />
@@ -27,6 +28,8 @@ The **Filum.ai Pain Point to Solution Agent** is a comprehensive AI-powered syst
 
 <img width="1882" height="915" alt="Image" src="https://github.com/user-attachments/assets/3978a5cd-140a-47e1-8496-4d8527ae56a6" />
 
+---
+
 ### 🔧 **How It Works**
 
 1. **Input**: Business describes a customer experience pain point
@@ -34,6 +37,7 @@ The **Filum.ai Pain Point to Solution Agent** is a comprehensive AI-powered syst
 3. **Matching**: Advanced algorithm maps pain points to relevant Filum.ai features
 4. **Output**: Structured recommendations with implementation guidance
 
+---
 
 ### ✨ Key Features
 
@@ -55,6 +59,8 @@ The **Filum.ai Pain Point to Solution Agent** is a comprehensive AI-powered syst
 
 **Pain Point**: *"We can't identify which touchpoints cause customer frustration."*
 → **Recommended Solution**: Customer Journey Experience Analysis (Insights - Experience)
+
+---
 
 ### 🎮 Quick Demo
 
