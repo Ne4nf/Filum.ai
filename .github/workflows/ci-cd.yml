@@ -87,10 +87,10 @@ jobs:
     
     - name: Test API endpoint
       run: |
-        curl -X POST http://127.0.0.1:8000/analyze \
+        curl -X POST http://127.0.0.1:8000/api/analyze \
           -H "Content-Type: application/json" \
-          -d '{"pain_point":"Test pain point","industry":"technology","company_size":"startup","urgency":"medium"}' \
-          -f
+          -d '{"pain_point":{"description":"Test pain point","context":{"industry":"technology","company_size":"startup","urgency_level":"medium","budget_range":null},"affected_areas":["customer_service"],"current_impact":{"description":"Test pain point"}}}' \
+          -f -v
 
   security-scan:
     runs-on: ubuntu-latest
@@ -107,8 +107,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install "bandit<1.8.0" "safety<2.0.0"
         pip install -r requirements.txt
-        pip install safety bandit
+        
     
     - name: Run safety check
       run: |
@@ -121,7 +122,7 @@ jobs:
       continue-on-error: true
     
     - name: Upload bandit report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: bandit-report
