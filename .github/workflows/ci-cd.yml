@@ -108,8 +108,8 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install --upgrade "typer>=0.4.0,<0.10.0"
         pip install safety bandit
+        pip install "typer<0.10.0"
         
     
     - name: Run safety check
