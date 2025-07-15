@@ -24,11 +24,19 @@ This agent serves as an intelligent bridge between **business pain points** and 
 3. **Matching**: Advanced algorithm maps pain points to relevant Filum.ai features
 4. **Output**: Structured recommendations with implementation guidance
 
+---
+## 📸 Screenshots
+<img width="1891" height="912" alt="Image" src="https://github.com/user-attachments/assets/24d8049f-ee41-4608-9f0b-ad2efe81f880" />
 
-
+### Solution 01:
 <img width="1888" height="915" alt="Web Interface Demo" src="https://github.com/user-attachments/assets/2de8f8f3-d438-4bc4-9f6d-0cf3a8ef8c19" />
 
 <img width="1885" height="903" alt="Analysis Results" src="https://github.com/user-attachments/assets/2007aab8-54fa-4f80-8aed-1d2b32d166b1" />
+
+### Solution 02:
+<img width="1887" height="922" alt="Image" src="https://github.com/user-attachments/assets/3598c4ab-8bda-4f1b-9cfc-b657694149e0" />
+
+<img width="1882" height="915" alt="Image" src="https://github.com/user-attachments/assets/83f3b91b-202e-4a3b-bec3-08b06b4e969e" />
 
 ### ✨ Key Features
 
