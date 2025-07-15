@@ -13,8 +13,6 @@
 
 The **Filum.ai Pain Point to Solution Agent** is an intelligent AI system specifically designed to analyze customer experience and service challenges, then recommend tailored solutions from the Filum.ai platform.
 
-
----
 ## 📸 Screenshots
 <img width="1891" height="912" alt="Image" src="https://github.com/user-attachments/assets/24d8049f-ee41-4608-9f0b-ad2efe81f880" />
 
