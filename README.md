@@ -48,18 +48,6 @@ The **Filum.ai Pain Point to Solution Agent** is a comprehensive AI-powered syst
 - 🚀 **Production Ready**: Comprehensive testing, CI/CD pipeline, and deployment options
 - 🔧 **Extensible Design**: Easy to add new Filum.ai features and matching algorithms
 
----
-
-### 🎯 **Real-World Examples**
-
-**Pain Point**: *"We're struggling to collect customer feedback consistently after a purchase."*
-→ **Recommended Solution**: Automated Post-Purchase Surveys (VoC - Surveys)
-
-**Pain Point**: *"Our support agents are overwhelmed by repetitive questions."*  
-→ **Recommended Solution**: AI Agent for FAQ & First Response (AI Customer Service - AI Inbox)
-
-**Pain Point**: *"We can't identify which touchpoints cause customer frustration."*
-→ **Recommended Solution**: Customer Journey Experience Analysis (Insights - Experience)
 
 ---
 
@@ -280,36 +268,6 @@ def calculate_confidence_score(pain_point: PainPointInput, filum_feature: dict) 
 
 ---
 
-## 📊 Filum.ai Knowledge Base
-
-The system includes **6 core Filum.ai features** across the platform's main categories:
-
-### �️ Voice of Customer (VoC)
-- **VoC Platform**: Multi-channel feedback collection across Web, Mobile, Zalo, SMS, Email, QR, POS
-- **Customer Journey Analytics**: End-to-end journey mapping with touchpoint analysis
-- **Multi-Channel Surveys**: Automated survey deployment and response collection
-
-### 🤖 AI Customer Service  
-- **AI Inbox**: Streamlined contact center with human-AI agent collaboration
-- **AI-Powered Customer Service**: Intelligent FAQ handling and first-response automation
-- **Smart Routing**: Automated ticket management and intelligent agent assignment
-
-### 📊 Insights & Analytics
-- **Experience Analytics**: Customer experience monitoring across touchpoints with topic analysis
-- **Operational Monitoring**: Performance tracking for surveys, campaigns, and contact center
-
-### 👥 Customer 360
-- **Customer Management**: Complete customer base management with segmentation capabilities
-- **Engagement Campaigns**: Targeted customer engagement and communication workflows
-
-Each Filum.ai feature includes:
-- ✅ **Detailed capabilities** mapped to common business pain points
-- ✅ **Implementation guidance** with timelines and complexity assessment  
-- ✅ **Industry fit analysis** for targeted recommendations
-- ✅ **Use case mappings** for specific customer experience challenges
-
-
----
 
 ## 🌐 Web Application
 
