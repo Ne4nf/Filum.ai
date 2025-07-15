@@ -374,51 +374,6 @@ pytest -v --tb=short
 ---
 
 
-### Environment Variables
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DEBUG` | `false` | Enable debug mode |
-| `API_HOST` | `127.0.0.1` | Server host |
-| `API_PORT` | `8000` | Server port |
-| `MAX_SOLUTIONS` | `5` | Maximum solutions to return |
-| `CONFIDENCE_THRESHOLD` | `0.1` | Minimum confidence score |
-
----
-
-## 📚 API Reference
-
-### PainPointAgent
-
-```python
-class PainPointAgent:
-    def __init__(self, knowledge_base_path: str = None, matching_engine = None):
-        """Initialize the agent with optional custom components."""
-        
-    def analyze_and_recommend(self, pain_point: PainPointInput) -> PainPointResult:
-        """Analyze pain point and return recommendations."""
-        
-    def get_solution_by_id(self, solution_id: str) -> Optional[Solution]:
-        """Get solution details by ID."""
-```
-
-### Data Models
-
-```python
-# Input models
-class PainPointInput(BaseModel):
-    description: str
-    affected_areas: List[str]
-    context: Context
-    preferences: Optional[Preferences] = None
-
-# Output models  
-class PainPointResult(BaseModel):
-    analysis: PainPointAnalysis
-    recommended_solutions: List[Solution]
-    metadata: AnalysisMetadata
-```
-
 
 ## 🚀 Quick Start Summary
 
