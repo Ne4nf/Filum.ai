@@ -17,7 +17,7 @@ import json
 import sys
 import os
 from pathlib import Path
-
+from fastapi import Request
 # Add src to path to import modules from core agent
 current_dir = Path(__file__).parent
 project_root = current_dir.parent
@@ -226,17 +226,15 @@ async def analyze_pain_point(
         
     print(f"✅ Analysis completed, trả về result_dict với {len(result_dict.get('recommended_solutions', []))} solutions")
 
+
+
 @app.post("/api/analyze")
-async def api_analyze_pain_point(request: Dict[str, Any]):
-    """
-    API endpoint để analysis pain point (JSON input/output)
-    """
-    
+async def api_analyze_pain_point(request: Request):
     if not agent:
         raise HTTPException(status_code=500, detail="Agent not initialized")
-    
     try:
-        result = agent.analyze_and_recommend(request, max_solutions=3)
+        data = await request.json()
+        result = agent.analyze_and_recommend(data, max_solutions=3)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
